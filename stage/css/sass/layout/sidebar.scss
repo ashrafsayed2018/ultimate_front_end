@@ -6,7 +6,8 @@
         top:0;
         left: 0;
         padding: 15px;
-        background-color: #ddd;
+        background-color: #292c33;
+        color:#fff;
         transition: all .3s ease-in-out;
         &.no-sidebar {
             left: -250px;
