@@ -8,5 +8,8 @@
         padding: 15px;
         background-color: #ddd;
         transition: all .3s ease-in-out;
+        &.no-sidebar {
+            left: -250px;
+        }
     }
 }

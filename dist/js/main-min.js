@@ -1,1 +1,1 @@
-var one="this is one";function hello(){return"hello ashraf"}console.log("hello world");var x=10,y=88;console.log(y+x);
+$(function(){"use strict";$(".toggle-sidebar").on("click",function(){$(".content-area,.sidebar").toggleClass("no-sidebar")})});

@@ -14,5 +14,8 @@ body {
         transition: all .3s;
         will-change: width;
         float: right;
+        &.no-sidebar {
+            width: 100%;
+        }
     }
 }
