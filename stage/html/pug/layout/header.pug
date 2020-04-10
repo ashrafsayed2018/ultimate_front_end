@@ -1,7 +1,7 @@
 .header
  i.fa.fa-exchange.fa-lg.toggle-sidebar
  .dropdown.notification-container
-  .fa.fa-bell.fa-lg.toggle-notifications#nontifications( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+  .fa.fa-bell.fa-lg.header-icon.toggle-notifications#nontifications( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
   .dropdown-menu(aria-labelledby='nontifications')
     .noti-head
       |notification
@@ -9,7 +9,7 @@
     .noti-content
       ul.list-unstyled
        li
-        i.fa.fa-envelope.fa-lg
+        i.fa.fa-envelope-o.fa-lg
         span.noti-text You Got Email from Ali
        li
         i.fa.fa-money.fa-lg
@@ -21,5 +21,4 @@
         i.fa.fa-heart-o.fa-lg
         span.noti-text You Got Email from Ramy
     .noti-foot.text-center: a(href="#") View All Notifications
-
-  
+ i.fa.fa-expand.fa-lg.header-icon.toggle-fullscreen
