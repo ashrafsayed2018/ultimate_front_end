@@ -52,4 +52,11 @@ var elem = document.documentElement;
         }
     }
 
+    // Toggle Settings 
+
+    $('.toggle-settings').on('click', function () {
+        $(this).find("i").toggleClass('fa-spin');
+        $(this).parent().toggleClass("hide-settings");
+    })
+
 })
