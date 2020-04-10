@@ -1,2 +1,25 @@
 .header
  i.fa.fa-exchange.fa-lg.toggle-sidebar
+ .dropdown.notification-container
+  .fa.fa-bell.fa-lg.toggle-notifications#nontifications( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+  .dropdown-menu(aria-labelledby='nontifications')
+    .noti-head
+      |notification
+      span 50
+    .noti-content
+      ul.list-unstyled
+       li
+        i.fa.fa-envelope.fa-lg
+        span.noti-text You Got Email from Ali
+       li
+        i.fa.fa-money.fa-lg
+        span.noti-text You Got money from Omer
+       li
+        i.fa.fa-thumbs-o-up.fa-lg
+        span.noti-text You Got like from Hassan
+       li
+        i.fa.fa-heart-o.fa-lg
+        span.noti-text You Got Email from Ramy
+    .noti-foot.text-center: a(href="#") View All Notifications
+
+  
