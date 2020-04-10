@@ -10,8 +10,9 @@ html(lang="en")
        include pug/layout/sidebar
        .content-area
          include pug/layout/header
-         .content
-          h1 #{pageTitle}
+         .container-fluid
+          .content
+           include pug/components/pageHead
      include pug/layout/scripts
 
        
