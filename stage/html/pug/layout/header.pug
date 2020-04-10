@@ -22,3 +22,32 @@
         span.noti-text You Got Email from Ramy
     .noti-foot.text-center: a(href="#") View All Notifications
  i.fa.fa-expand.fa-lg.header-icon.toggle-fullscreen
+ .dropdown.usermenu-container
+  .username#usermenu( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+    img.avatar.rounded-circle(src="imgs/avatar1.jpg", alt="user avatar")
+    span Ashraf sayed
+    i.fa.fa-angle-down-fa-lg
+  .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+   .user-info
+    h3.member-name Ashraf Sayed
+    p Premium Membership
+   hr 
+   ul.activities-list.list-unstyled
+     li Add Comment on post how to Api With Php
+     li Create Post About Javascript Modules
+     li Create Chart on How To Use Program
+   hr
+   .row.usermenu-links
+      .col
+        .link-box 
+          i.fa.fa-gear.fa-lg.fa-fw
+          span Settings
+      .col
+        .link-box 
+          i.fa.fa-user.fa-lg.fa-fw
+          span Profile
+      .col
+        .link-box
+          i.fa.fa-power-off.fa-lg.fa-fw
+          span Log out
+
