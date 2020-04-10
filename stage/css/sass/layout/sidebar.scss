@@ -12,5 +12,81 @@
         &.no-sidebar {
             left: -250px;
         }
+        .logo-area {
+          font-weight: bold;
+          font-size: 26px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        .links-area {
+            // All Links
+            li {
+                a {
+            color:#ccc;
+            padding: 10px 20px;
+            display: block;
+            transition: .3s;
+           
+            &:hover {
+                text-decoration: none;
+                color:#fff
+            }
+            .fa-angle-right {
+                float: right;
+                position: relative;
+                top:5px;
+                transition: .3s;
+                &.down{
+                    transform: rotate(90deg);
+                }
+            }
+                }
+            }
+             // main links
+            > li > a {
+                position: relative;
+                color: #fff;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -5px;
+                    top: 19px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50px;
+                    border: 2px solid #fff;
+                    }
+                    &:hover {
+                        padding-left: 25px;
+                    }
+              }
+            
+              .child-linls{
+                  position: relative;
+                  display: none;
+                  &::before {
+                      content: '';
+                      position: absolute;
+                      width: 3px;
+                      height: 100%;
+                      background: #666;
+                      top:0;
+                      left:0
+
+                  }
+                  a {
+                   position: relative;
+                   &:hover::before  {
+                       content: '';
+                       position: absolute;
+                       top:0;
+                       left: 0;
+                       width: 2px;
+                       height: 100%;
+                       background: #fff;
+                   }  
+                  }
+              }
+        }
     }
 }
