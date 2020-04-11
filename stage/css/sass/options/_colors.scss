@@ -24,5 +24,8 @@ $themes : (
        .header .usermenu-container .username span {
            color:$color
        }
+       .page .sidebar .links-area>li>a.active::before {
+           border-color:$color
+       }
     }
 }
